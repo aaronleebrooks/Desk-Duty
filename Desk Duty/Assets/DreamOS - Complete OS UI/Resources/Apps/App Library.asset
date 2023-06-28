@@ -22,13 +22,6 @@ MonoBehaviour:
     appIconSmall: {fileID: 21300000, guid: 856a1263d180d4d489a735e300ed113b, type: 3}
     gradientLeft: {r: 0.6862745, g: 0.60784316, b: 0.98039216, a: 1}
     gradientRight: {r: 1, g: 0.88235295, b: 0.29411766, a: 1}
-  - appTitle: Commander
-    appIconPreview: {fileID: 2800000, guid: 03a5b5ac1dbe76f43b8e7662ba54a6f1, type: 3}
-    appIconBig: {fileID: 21300000, guid: 9ad6ef8d0f10b2b46b5a25efed05d24a, type: 3}
-    appIconMedium: {fileID: 21300000, guid: 3ec63597f9e5c314c81ac95c0d5e8544, type: 3}
-    appIconSmall: {fileID: 21300000, guid: 03a5b5ac1dbe76f43b8e7662ba54a6f1, type: 3}
-    gradientLeft: {r: 0.49019608, g: 0.6666667, b: 1, a: 1}
-    gradientRight: {r: 0.3137255, g: 0.92156863, b: 0.7058824, a: 1}
   - appTitle: Downloads
     appIconPreview: {fileID: 2800000, guid: c7211fe68292dfd46818d5b2a09d8967, type: 3}
     appIconBig: {fileID: 21300000, guid: c7211fe68292dfd46818d5b2a09d8967, type: 3}
@@ -36,13 +29,6 @@ MonoBehaviour:
     appIconSmall: {fileID: 21300000, guid: 2ffcc23b0c165444090fa63adb657a3b, type: 3}
     gradientLeft: {r: 0.5058824, g: 0.5686275, b: 0.7607843, a: 1}
     gradientRight: {r: 0.9098039, g: 0.79607844, b: 0.7529412, a: 1}
-  - appTitle: Game Hub
-    appIconPreview: {fileID: 2800000, guid: 89ced9ff926ebcc44a10bbc83e773a88, type: 3}
-    appIconBig: {fileID: 21300000, guid: bf3a214668bade94c8eacdc68a12c1bd, type: 3}
-    appIconMedium: {fileID: 21300000, guid: 364a1d9561771964990ff0a1676660bc, type: 3}
-    appIconSmall: {fileID: 21300000, guid: 89ced9ff926ebcc44a10bbc83e773a88, type: 3}
-    gradientLeft: {r: 0.49019608, g: 0.49019608, b: 1, a: 1}
-    gradientRight: {r: 1, g: 0.7254902, b: 0.88235295, a: 1}
   - appTitle: Mail
     appIconPreview: {fileID: 2800000, guid: c95bb353bd460954fb44a687e0658164, type: 3}
     appIconBig: {fileID: 21300000, guid: 526a64c36d8b8f3418b9e0bc0c2e2566, type: 3}
@@ -78,13 +64,6 @@ MonoBehaviour:
     appIconSmall: {fileID: 21300000, guid: 226e709d5553bea4c8adc362ac6fea02, type: 3}
     gradientLeft: {r: 0.59607846, g: 0.5647059, b: 0.8901961, a: 1}
     gradientRight: {r: 0.69411767, g: 0.95686275, b: 0.8117647, a: 1}
-  - appTitle: Reminder
-    appIconPreview: {fileID: 2800000, guid: c4476ef20a4f22149a4d2d407d85f8b9, type: 3}
-    appIconBig: {fileID: 21300000, guid: 39a5df0c9dd9c6e4ea31fc8397410c3b, type: 3}
-    appIconMedium: {fileID: 21300000, guid: 0955dc463a608394297b133313f2ae40, type: 3}
-    appIconSmall: {fileID: 21300000, guid: c4476ef20a4f22149a4d2d407d85f8b9, type: 3}
-    gradientLeft: {r: 0.50980395, g: 0.92156863, b: 0.50980395, a: 1}
-    gradientRight: {r: 0.54901963, g: 0.5372549, b: 0.9411765, a: 1}
   - appTitle: Settings
     appIconPreview: {fileID: 2800000, guid: d2c47371232e9794998200162a100896, type: 3}
     appIconBig: {fileID: 21300000, guid: eeeddc560f3eb6f48877925023c8907d, type: 3}
@@ -106,10 +85,3 @@ MonoBehaviour:
     appIconSmall: {fileID: 21300000, guid: e94a74d29166acd41933288895309f22, type: 3}
     gradientLeft: {r: 0.9490196, g: 0.4392157, b: 0.6117647, a: 1}
     gradientRight: {r: 1, g: 0.8627451, b: 0.29411766, a: 1}
-  - appTitle: Widget Library
-    appIconPreview: {fileID: 2800000, guid: 7ffead7e6de095045ab7d159d8b82255, type: 3}
-    appIconBig: {fileID: 21300000, guid: 3495942995da28549b22562f3b36a031, type: 3}
-    appIconMedium: {fileID: 21300000, guid: 261f5c9a344ff4c458cf8a02f7fec756, type: 3}
-    appIconSmall: {fileID: 21300000, guid: 7ffead7e6de095045ab7d159d8b82255, type: 3}
-    gradientLeft: {r: 0.6666667, g: 0.98039216, b: 0.60784316, a: 1}
-    gradientRight: {r: 1, g: 0.5882353, b: 0.627451, a: 1}

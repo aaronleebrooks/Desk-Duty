@@ -14,18 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pictures:
   - pictureID: Default
-    pictureSprite: {fileID: 21300000, guid: 3cb7b1004acbb104f8ed9c67138dbb95, type: 3}
-  - pictureID: Picture 1
-    pictureSprite: {fileID: 21300000, guid: c348defa9826c5145baa8b8df143654a, type: 3}
-  - pictureID: Picture 2
-    pictureSprite: {fileID: 21300000, guid: 886ac53fc6a142f4cac5aa3cfc35406b, type: 3}
-  - pictureID: Picture 3
-    pictureSprite: {fileID: 21300000, guid: d15d5c115bb6bbd4bac316811a3f1339, type: 3}
-  - pictureID: Picture 4
-    pictureSprite: {fileID: 21300000, guid: 1402ac37fc9b6154c892f36542e4b9c4, type: 3}
-  - pictureID: Picture 5
-    pictureSprite: {fileID: 21300000, guid: 730787b46b62fcc439c1da1421736985, type: 3}
-  - pictureID: Picture 6
-    pictureSprite: {fileID: 21300000, guid: 501cb651f7cd45f429a26fdaf4d1491d, type: 3}
-  - pictureID: Picture 7
-    pictureSprite: {fileID: 21300000, guid: 63007bf461611d44caddbe92b0282793, type: 3}
+    pictureSprite: {fileID: 21300000, guid: d5986d1e9cc95dc4e800f5b623033cc2, type: 3}

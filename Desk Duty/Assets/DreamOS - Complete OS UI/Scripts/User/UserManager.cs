@@ -19,6 +19,7 @@ namespace Michsky.DreamOS
         public ProfilePictureLibrary ppLibrary;
         public GameObject ppItem;
         public Transform ppParent;
+        public Animator notepad;
 
         // Content
         [Range(1, 20)] public int minNameCharacter = 1;
@@ -70,6 +71,7 @@ namespace Michsky.DreamOS
         void Awake()
         {
             desktopScreen.Play("Desktop In");
+
         }
 
         public void InitializeUserManager()

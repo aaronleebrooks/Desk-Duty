@@ -16,7 +16,7 @@ MonoBehaviour:
   enableExtendedColorPicker: 0
   editorHints: 1
   selectedTheme: 0
-  highlightedColorDark: {r: 0, g: 0.5882353, b: 1, a: 1}
+  highlightedColorDark: {r: 0.27044016, g: 0.69959307, b: 1, a: 1}
   highlightedColorSecondaryDark: {r: 1, g: 1, b: 1, a: 1}
   primaryColorDark: {r: 1, g: 1, b: 1, a: 1}
   secondaryColorDark: {r: 0.09803922, g: 0.13725491, b: 0.1764706, a: 1}
@@ -25,8 +25,8 @@ MonoBehaviour:
   taskBarColorDark: {r: 0.09803922, g: 0.13725491, b: 0.1764706, a: 0.8039216}
   highlightedColorCustom: {r: 1, g: 0.09803922, b: 0.33333334, a: 1}
   highlightedColorSecondaryCustom: {r: 1, g: 1, b: 1, a: 1}
-  systemFontThin: {fileID: 11400000, guid: 58314e93d8c20b34cb6659ae8aba8827, type: 2}
-  systemFontLight: {fileID: 11400000, guid: 2f17e8bb3967fe14093d5fec798fffd9, type: 2}
+  systemFontThin: {fileID: 11400000, guid: 4bd810f1cbcb0f446a8f5a31453e243f, type: 2}
+  systemFontLight: {fileID: 11400000, guid: ff92caddbdea54743a04dda78cc41035, type: 2}
   systemFontRegular: {fileID: 11400000, guid: 4bd810f1cbcb0f446a8f5a31453e243f, type: 2}
   systemFontSemiBold: {fileID: 11400000, guid: 84dd14695854bbc43a5faa24fcf93d0d, type: 2}
   systemFontBold: {fileID: 11400000, guid: fa328c1ae3ffb6b4583cf371153b0be6, type: 2}

@@ -13,12 +13,10 @@ MonoBehaviour:
   m_Name: Note Library
   m_EditorClassIdentifier: 
   notes:
-  - noteTitle: Example Note
-    noteContent: "This is just a sample note created from the note library. You can
-      add new notes using <b>Tools > DreamOS > Show Note Library</b>. \r\n\r\nIf
-      you want, you can also create a new note by clicking the button on the left
-      bar.\r\n\r\nNote content can be changed by clicking this field. The title can
-      also be edited in the same way. "
+  - noteTitle: Welcome to the Sunshine PD!
+    noteContent: I hope you found your desk alright. We have quite a doozy for your
+      first day as a clerk. Local rich guy got taken down by a former employee. If
+      you get any questions on your to-do list, check the employee guide.
     isDeleted: 0
     isCustom: 0
     isModContent: 0
