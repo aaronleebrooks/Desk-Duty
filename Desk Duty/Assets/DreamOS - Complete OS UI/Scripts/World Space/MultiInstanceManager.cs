@@ -29,7 +29,6 @@ namespace Michsky.DreamOS
             // External Resources
             public UserManager userManager;
             public SettingsManager settingsManager;
-            public NetworkManager networkManager;
             public WallpaperManager wallpaperManager;
             public WidgetManager widgetManager;
             public WebBrowserManager webBrowserManager;
@@ -105,9 +104,6 @@ namespace Michsky.DreamOS
 
             instances[index].settingsManager = instances[index].instanceCanvas.GetComponentInChildren<SettingsManager>();
             if (instances[index].settingsManager != null) { instances[index].settingsManager.userManager = instances[index].userManager; }
-
-            instances[index].networkManager = instances[index].instanceCanvas.GetComponentInChildren<NetworkManager>();
-            if (instances[index].networkManager != null) { instances[index].networkManager.userManager = instances[index].userManager; }
 
             instances[index].wallpaperManager = instances[index].instanceCanvas.GetComponentInChildren<WallpaperManager>();
             if (instances[index].wallpaperManager != null) { instances[index].wallpaperManager.userManager = instances[index].userManager; }

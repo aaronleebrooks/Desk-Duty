@@ -152,12 +152,6 @@ namespace Michsky.DreamOS
                             mimTarget.instances[i].settingsManager = EditorGUILayout.ObjectField(mimTarget.instances[i].settingsManager, typeof(SettingsManager), true) as SettingsManager;
                             GUILayout.EndHorizontal();
 
-                            // Network Manager
-                            GUILayout.BeginHorizontal(EditorStyles.helpBox);
-                            GUILayout.Label("Network Manager", customSkin.FindStyle("Text"), GUILayout.Width(140));
-                            mimTarget.instances[i].networkManager = EditorGUILayout.ObjectField(mimTarget.instances[i].networkManager, typeof(NetworkManager), true) as NetworkManager;
-                            GUILayout.EndHorizontal();
-
                             // Wallpaper Manager
                             GUILayout.BeginHorizontal(EditorStyles.helpBox);
                             GUILayout.Label("Wallpaper Manager", customSkin.FindStyle("Text"), GUILayout.Width(140));

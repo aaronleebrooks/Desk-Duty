@@ -12,7 +12,6 @@ namespace Michsky.DreamOS
     public class WebBrowserManager : MonoBehaviour
     {
         // Resources
-        public NetworkManager networkManager;
         public WebBrowserLibrary webLibrary;
         [SerializeField] private TextMeshProUGUI tabTitle;
         [SerializeField] private Image tabIcon;
@@ -178,8 +177,8 @@ namespace Michsky.DreamOS
                     }
                 }
 
-                if (networkManager.hasConnection == true && urlField.text.ToLower() == webLibrary.webPages[urlIndex].pageURL
-                    || networkManager.hasConnection == true && urlField.text.ToLower() == "www." + webLibrary.webPages[urlIndex].pageURL)
+                if (urlField.text.ToLower() == webLibrary.webPages[urlIndex].pageURL
+                    || urlField.text.ToLower() == "www." + webLibrary.webPages[urlIndex].pageURL)
                 {
                     tabIcon.sprite = webLibrary.webPages[urlIndex].pageIcon;
                     tabTitle.text = webLibrary.webPages[urlIndex].pageTitle;
@@ -188,22 +187,6 @@ namespace Michsky.DreamOS
                     Destroy(currentTabPage);
 
                     GameObject tObject = Instantiate(webLibrary.webPages[urlIndex].pageContent, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
-                    tObject.name = tObject.name.Replace("(Clone)", "").Trim();
-                    tObject.transform.SetParent(pageViewer, false);
-
-                    currentTabPage = tObject;
-                    currentTabPage.SetActive(true);
-                }
-
-                else if (networkManager.hasConnection == false)
-                {
-                    tabIcon.sprite = webLibrary.noConnectionPage.pageIcon;
-                    tabTitle.text = webLibrary.noConnectionPage.pageTitle;
-                    urlField.text = webLibrary.noConnectionPage.pageURL;
-
-                    Destroy(currentTabPage);
-
-                    GameObject tObject = Instantiate(webLibrary.noConnectionPage.pageContent, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
                     tObject.name = tObject.name.Replace("(Clone)", "").Trim();
                     tObject.transform.SetParent(pageViewer, false);
 
@@ -453,9 +436,6 @@ namespace Michsky.DreamOS
                 DownloadFile dfVar = dfObj.gameObject.GetComponent<DownloadFile>();
                 dfVar.wbm = this;
 
-                if (networkManager.dynamicNetwork == true) { dfVar.downloadMultiplier = networkManager.networkItems[networkManager.currentNetworkIndex].networkSpeed; }
-                else { dfVar.downloadMultiplier = networkManager.defaultSpeed; }
-
                 dfVar.fileSize = webLibrary.dlFiles[dlIndex].fileSize;
                 dfVar.enableNotification = true;
 
@@ -546,11 +526,6 @@ namespace Michsky.DreamOS
                     dfSize.text = webLibrary.dlFiles[index].fileSize.ToString() + " MB";
 
                     DownloadFile dfVar = dfObj.gameObject.GetComponent<DownloadFile>();
-
-                    if (networkManager.dynamicNetwork == true)
-                        dfVar.downloadMultiplier = networkManager.networkItems[networkManager.currentNetworkIndex].networkSpeed;
-                    else
-                        dfVar.downloadMultiplier = networkManager.defaultSpeed;
 
                     dfVar.fileSize = webLibrary.dlFiles[index].fileSize;
 

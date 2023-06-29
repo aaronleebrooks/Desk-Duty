@@ -54,40 +54,22 @@ namespace Michsky.DreamOS
 
         void OnEnable()
         {
-            commandHistory.text = "";
-            commandInput.text = "";
-            UpdateColors();
-            if (getTimeData == true && timeManager != null) { UpdateTime(); }
-            commandHistory.text = commandHistory.text + onEnableText;
-            commandInput.ActivateInputField();
-            StartCoroutine("FixLayout");
+
         }
 
         void OnDisable()
         {
-            StopCoroutine("FixLayout");
-            StopCoroutine("ApplyTypewriter");
-            StopCoroutine("WaitForFeedbackDelay");
-            StopCoroutine("WaitForProcessDelay");
+
         }
 
         void Awake()
         {
-            historyRT = commandHistory.GetComponent<RectTransform>();
-            historyParentRT = commandHistory.transform.parent.GetComponent<RectTransform>();
-            this.enabled = false;
+
         }
 
         void Update()
         {
-            if (string.IsNullOrEmpty(commandInput.text) == true || EventSystem.current.currentSelectedGameObject != commandInput.gameObject) { return; }
-            else if (commandInput.isFocused == false) { commandInput.ActivateInputField(); }
-
-#if ENABLE_LEGACY_INPUT_MANAGER
-            if (Input.GetKeyDown(KeyCode.Return)) { ProcessCommand(); }
-#elif ENABLE_INPUT_SYSTEM
-            if (Keyboard.current.enterKey.wasPressedThisFrame) { ProcessCommand(); }
-#endif
+          
         }
 
         public void UpdateColors()

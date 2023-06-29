@@ -61,11 +61,6 @@ namespace Michsky.DreamOS
             // If updating is enabled and there's a connected network
             if (updateDownloadBar == true && PlayerPrefs.HasKey(wbm.userManager.machineID + "ConnectedNetworkTitle") == true)
             {
-                // If download speed is different than the connected network, update it
-                if (wbm != null && wbm.networkManager.dynamicNetwork == true && downloadMultiplier != wbm.networkManager.networkItems[wbm.networkManager.currentNetworkIndex].networkSpeed)
-                    downloadMultiplier = wbm.networkManager.networkItems[wbm.networkManager.currentNetworkIndex].networkSpeed;
-                else if (wbm != null && wbm.networkManager.dynamicNetwork == false && downloadMultiplier != wbm.networkManager.defaultSpeed)
-                    downloadMultiplier = wbm.networkManager.defaultSpeed;
 
                 // Increase the visuals depending on download size
                 downloadBar.value += Time.deltaTime * downloadMultiplier;

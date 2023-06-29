@@ -26,13 +26,7 @@ namespace Michsky.DreamOS
 
         void Awake()
         {
-            if (mixer == null && masterSlider == null)
-                return;
-
-            if (userManager == null) { mixer.SetFloat("Master", Mathf.Log10(PlayerPrefs.GetFloat(masterSlider.sliderTag + "Slider")) * 20); }
-            else { mixer.SetFloat("Master", Mathf.Log10(PlayerPrefs.GetFloat(userManager.machineID + masterSlider.sliderTag + "Slider")) * 20); }
-
-            masterSlider.mainSlider.onValueChanged.Invoke(masterSlider.mainSlider.value);
+           
         }
 
         public void VolumeSetMaster(float volume)
