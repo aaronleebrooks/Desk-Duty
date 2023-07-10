@@ -260,7 +260,7 @@ namespace Michsky.DreamOS
         {
             string searchURL = "www.zoozle.com?q=" + Uri.EscapeDataString(searchString);
             urlField.text = searchURL;
-            OpenWebPage();
+            OpenPage(searchURL);
         }
 
         public void GoBack()
@@ -680,10 +680,10 @@ namespace Michsky.DreamOS
             }
 
             // Check for spaces or special characters excluding the dot
-            bool hasSpacesOrSpecialChars = !string.IsNullOrWhiteSpace(url) && url.ToCharArray().Any(c => char.IsWhiteSpace(c));
+            bool hasSpacesOrSpecialChars = string.IsNullOrWhiteSpace(url) && url.ToCharArray().Any(c => char.IsWhiteSpace(c));
 
             // Return true if both conditions are met
-            return hasValidExtension && hasSpacesOrSpecialChars;
+            return hasValidExtension && !hasSpacesOrSpecialChars;
         }
 
         // public void DoSearch(string searchString)
